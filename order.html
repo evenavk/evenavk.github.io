@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petersons Cakes - Order</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div id="header-container"></div>
+
+<main>
+    <h1>Your Order</h1>
+
+    <form id="order-form">
+    <label for="product">Choose a product:</label>
+    <select id="product" name="product">
+        <option value="">Select a product</option>
+        <option value="chocolate-cake">Chocolate Cake</option>
+        <option value="carrot-cake">Carrot Cake</option>
+        <option value="red-velvet-cupcake">Red Velvet Cupcake</option>
+        <option value="peanut-butter-cupcake">Peanut Butter Cupcake</option>
+        <option value="cinnamon-roll">Cinnamon Roll</option>
+        <option value="pain-au-chocolat">Pain au Chocolat</option>
+    </select>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
+    <button type="button" id="add-to-order">Add to Order</button>
+</form>
+
+<section id="order-summary">
+    <h2>Order Summary</h2>
+    <div class="cart-header">
+        <span>Product</span>
+        <span>Quantity</span>
+        <span>Price</span>
+    </div>
+    <ul id="order-items"></ul>
+    <p id="order-total">Total: 0 NOK</p>
+    <button id="clear-cart">Clear Cart</button>
+</section>
+
+<section id="customer-information">
+    <h2>Customer Information</h2>
+    <div class="form-group">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+    </div>
+</section>
+
+<section id="pickup-payment">
+    <h2>Pickup and Payment</h2>
+    <div class="form-group">
+        <label for="pickup-time">Pickup Time:</label>
+        <select id="pickup-time" name="pickup-time" required>
+            <option value="">Select pickup time</option>
+            <option value="10:00">10:00</option>
+            <option value="12:00">12:00</option>
+            <option value="14:00">14:00</option>
+            <option value="16:00">16:00</option>
+        </select>
+    </div>
+    <div class="payment-options">
+        <p>Payment Method:</p>
+
+        <label>
+            <input type="radio" name="payment" value="online" required>
+            Pay Online
+        </label>
+
+        <label>
+            <input type="radio" name="payment" value="store" required>
+            Pay in Store
+        </label>
+    </div>
+
+    <button type="button" id="place-order">Place Order</button>
+</section>
+
+
+</main>
+
+<div id="footer-container"></div>
+
+<script src="js/shared.js"></script>
+<script src="js/order.js"></script>
+    
+</body>
+</html>
