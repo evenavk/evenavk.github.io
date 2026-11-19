@@ -1,0 +1,68 @@
+body{
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: lightgray;
+    color: black;
+
+}
+section{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+}
+header{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+h1{
+    font-size: 36px;
+
+}
+h2{
+    margin-top: 0;
+
+}
+h3{
+    margin-bottom: 5px;
+
+}
+li{
+    margin-bottom: 15px;
+    
+}
+
+/* Lagt til for P3: tabeller og sitater */
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+th, td{
+    border: 1px solid gray;
+    padding: 6px 10px;
+    text-align: left;
+
+}
+th{
+    background-color: lightgray;
+
+}
+blockquote{
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-left: 4px solid gray;
+    background-color: whitesmoke;
+
+}
+footer{
+    text-align: center;
+    margin-top: 30px;
+
+}

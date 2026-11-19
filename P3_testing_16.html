@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P3 Project Testing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- 1. Header -->
+    <header>
+        <h1>P3 Project Testing</h1>
+        <p>Even Alexander Vegusdal-Kile, Philip Totland, Domantas Zurba, Sofie Forbord Dalen </p>
+        <p>Group 16 - Petersons Cakes</p>
+        <p>19. november 2026</p>
+    </header>
+
+    <!-- 2. Administrative Details -->
+    <section>
+        <h2>Administrative Details</h2>
+        <p>
+            Our client is Simon Peterson, the owner and founder of Petersons Cakes, a small bakery in Trondheim.
+            Since Petersons Cakes is a fictional bakery, a fellow student acted as Simon Peterson during the testing.
+            He was given a short description of Simon and his requirements from P0 and P1, and evaluated the
+            website from the owner's point of view.
+        </p>
+        <p>Website: <a href="https://evenavk.github.io/">https://evenavk.github.io/</a></p>
+    </section>
+
+    <!-- 3. Testing Document -->
+    <section>
+        <h2>Testing Document</h2>
+        <p>
+            We tested the website in three ways: a questionnaire made in Google Forms, live testing where we
+            observed three users, and our own testing on different devices and browsers.
+        </p>
+        <p>
+            Link to the questionnaire: <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNNDkSlfdNR2TNhN0dIKaCdd4piZvWcWimlLOSdEp9YDoxMw/viewform">Google Form - Brukertest av Petersons Cakes</a>
+        </p>
+        <p>
+            The questionnaire was written in Norwegian, since most of our testers are Norwegian. It is divided into
+            eight short pages:
+        </p>
+        <ul>
+            <li><strong>About you:</strong> age group, occupation, how often the tester buys from a bakery, and whether the tester is the client.</li>
+            <li><strong>Device and browser:</strong> which device and browser the tester used.</li>
+            <li>
+                <strong>Tasks:</strong> five tasks the tester had to solve on the website, without any instructions on how to do it:
+                (1) find the opening hours on Sundays, (2) find the price of a Carrot Cake, (3) order 2 Cinnamon Rolls
+                for pickup at 14:00 and pay in the store, (4) find out how to contact the bakery about catering, and
+                (5) find out who started the bakery. For each task the tester answered "easy", "hard" or "could not do it".
+            </li>
+            <li><strong>Design, Navigation, Content and Usability:</strong> one or two questions on a scale from 1 to 5 for each category, and a text field for comments.</li>
+            <li><strong>Final questions:</strong> overall satisfaction (1-5), what the tester liked best, what they would change, and other comments. The client was asked to write his testimonial here.</li>
+        </ul>
+    </section>
+
+    <!-- 4. Tester Audience -->
+    <section>
+        <h2>Tester Audience</h2>
+        <p>
+            In P1 we described the target audience as people who want to buy baked goods, mostly locals in
+            Trondheim, but also tourists. Both private customers and customers ordering for larger events
+            should be able to use the website. Simon is a new bakery owner who struggles with technology,
+            and many of his customers are likely to be older people.
+        </p>
+        
+        <p>
+            To reach people outside our own student group, we tried to share the questionnaire with people of different ages, not only fellow students. We shared the questionnaire with friends, family and acquaintances, and asked them to share it with others. We also shared it in a few group chats. We received 15 responses up to 19 November. One of these was from the client, so the numbers below are based on the other 14 testers.
+        </p>
+
+        <h3>Age</h3>
+        <ul>
+            <li>18-24 years: 43%</li>
+            <li>25-34 years: 7%</li>
+            <li>35-49 years: 43%</li>
+            <li>65 years or older: 7%</li>
+        </ul>
+
+        <h3>Occupation</h3>
+        <ul>
+            <li>Working: 50%</li>
+            <li>Students: 43%</li>
+            <li>Other: 7%</li>
+        </ul>
+
+        <h3>How often do you buy from a bakery?</h3>
+        <ul>
+            <li>Several times a week: 7%</li>
+            <li>A few times a month: 21%</li>
+            <li>Less often: 50%</li>
+            <li>Never: 21%</li>
+        </ul>
+
+        <p>
+            We were partly successful. We got testers from four age groups, and 57% were not students.
+            Still, only one tester was over 65, and there were no testers between 50 and 64. Also, 71% of the
+            testers rarely or never buy from a bakery, so most of them are not typical customers of Simon.
+            We did not reach any tourists.
+        </p>
+
+        <h3>Live testing</h3>
+        <p>
+            Even, one of our group members, did live testing with his three roommates, who are all students. 
+            Each tester used his own device. Even read the five tasks out loud one at a time, timed them, and asked the testers to think out loud. 
+            He did not help them or explain anything. Afterwards he asked what was easiest, what was most confusing, and what they would change. 
+            Then they filled in the questionnaire.
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tester</th>
+                    <th>Device</th>
+                    <th>Task 1</th>
+                    <th>Task 2</th>
+                    <th>Task 3 (order)</th>
+                    <th>Task 4</th>
+                    <th>Task 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tester 1</td>
+                    <td>Laptop, Chrome</td>
+                    <td>2 s</td>
+                    <td>5 s</td>
+                    <td>50 s (one error)</td>
+                    <td>4 s</td>
+                    <td>5 s</td>
+                </tr>
+                <tr>
+                    <td>Tester 2</td>
+                    <td>PC, Brave</td>
+                    <td>2 s</td>
+                    <td>5 s</td>
+                    <td>1 min 12 s (two errors)</td>
+                    <td>4 s</td>
+                    <td>5 s</td>
+                </tr>
+                <tr>
+                    <td>Tester 3</td>
+                    <td>Mac, Safari</td>
+                    <td>2 s</td>
+                    <td>4 s</td>
+                    <td>38 s (no errors)</td>
+                    <td>4 s</td>
+                    <td>4 s</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            All three testers solved all the tasks. Tasks 1, 2, 4 and 5 took only a few seconds. Ordering
+            (task 3) took much longer:
+        </p>
+        <ul>
+            <li>
+                Tester 1 first tried to order from the Menu page before he found the Order page. He wrote his phone
+                number as "+47 12345678" and got the error message "Please enter a valid 8-digit phone number".
+                He had to remove "+47" to place the order.
+            </li>
+            <li>
+                Tester 2 chose 2 Cinnamon Rolls in the dropdown, but did not click "Add to Order". He got an error
+                saying the order was empty, and then an error for an invalid email address, before he placed the order.
+            </li>
+            <li>Tester 3 placed the order without any errors.</li>
+        </ul>
+        <p>
+            When we asked what was most confusing, all three answered the ordering. Two of them suggested, without
+            hearing each other, that it should be possible to add products to the order directly from the Menu page.
+        </p>
+    </section>
+
+    <!-- 5. Testing Platforms -->
+    <section>
+        <h2>Testing Platforms</h2>
+        <p>The website was tested on the following devices and browsers:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Device</th>
+                    <th>Browser</th>
+                    <th>Tested by</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Windows PC / laptop</td>
+                    <td>Chrome, Brave, Edge</td>
+                    <td>Questionnaire (6), live testing (2), client, our own testing</td>
+                </tr>
+                <tr>
+                    <td>Mac</td>
+                    <td>Safari</td>
+                    <td>Questionnaire, live testing</td>
+                </tr>
+                <tr>
+                    <td>iPhone</td>
+                    <td>Safari, Chrome, Opera</td>
+                    <td>Questionnaire (4), our own testing</td>
+                </tr>
+                <tr>
+                    <td>Android phone</td>
+                    <td>Chrome</td>
+                    <td>Questionnaire (2)</td>
+                </tr>
+                <tr>
+                    <td>iPad</td>
+                    <td>Safari</td>
+                    <td>Our own testing (portrait and landscape)</td>
+                </tr>
+                <tr>
+                    <td>Android tablet</td>
+                    <td>Chrome</td>
+                    <td>Questionnaire</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Among the 14 testers, 43% used a Windows PC, 29% an iPhone, 14% an Android phone, 7% a Mac and
+            7% an Android tablet. 71% used Chrome, 14% Brave, 7% Opera and 7% Safari.
+        </p>
+
+        <h3>Our own testing</h3>
+        <p>
+            We tested all five pages on an iPhone (Safari), an iPad (Safari), a laptop (Brave) and a PC (Chrome).
+            On all devices the pages, links, map and images loaded correctly, the order calculations were correct,
+            the cart was still there after reloading the page, and "Clear Cart" worked. There was no horizontal
+            scrolling on the small screens, and the phone number and email on the Contact page could be tapped on
+            the iPhone and iPad. On the laptop and PC the layout still worked when we zoomed to 200% and when we
+            made the window narrow and wide.
+        </p>
+        <p>
+            The only problem we found ourselves was that the iPhone zooms in when you tap a text field in the order
+            form. This happens because the text fields have a font size of 14px, and Safari on iPhone zooms in on
+            fields smaller than 16px.
+        </p>
+
+        <h3>Accessibility</h3>
+        <p>
+            We could navigate the whole website and place an order using only the Tab and Enter keys. We also ran
+            Lighthouse in Chrome and Brave:
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Page</th>
+                    <th>Performance</th>
+                    <th>Accessibility</th>
+                    <th>Best Practices</th>
+                    <th>SEO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>index.html (laptop)</td>
+                    <td>95</td>
+                    <td>100</td>
+                    <td>96</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>menu.html (PC)</td>
+                    <td>81</td>
+                    <td>100</td>
+                    <td>96</td>
+                    <td>91</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Accessibility got 100 on both pages. The lower performance on the Menu page is because the images are
+            very large (about 2.2 MB each, 12.8 MB in total for the page). Lighthouse also reported that the images
+            have no width and height, which makes the content jump while the page loads, that the pages have no
+            meta description, and that there were errors in the browser console.
+        </p>
+    </section>
+
+    <!-- 6. Feedback Summary -->
+    <section>
+        <h2>Feedback Summary</h2>
+        <p>
+            Averages are from the 14 testers on a scale from 1 (worst) to 5 (best). The quotes are translated
+            from Norwegian.
+        </p>
+
+        <h3>Tasks</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Easy</th>
+                    <th>Hard</th>
+                    <th>Could not do it</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. Opening hours on Sundays</td>
+                    <td>93%</td>
+                    <td>7%</td>
+                    <td>0%</td>
+                </tr>
+                <tr>
+                    <td>2. Price of a Carrot Cake</td>
+                    <td>93%</td>
+                    <td>7%</td>
+                    <td>0%</td>
+                </tr>
+                <tr>
+                    <td>3. Order 2 Cinnamon Rolls</td>
+                    <td>71%</td>
+                    <td>14%</td>
+                    <td>14%</td>
+                </tr>
+                <tr>
+                    <td>4. Contact about catering</td>
+                    <td>93%</td>
+                    <td>0%</td>
+                    <td>7%</td>
+                </tr>
+                <tr>
+                    <td>5. Who started the bakery</td>
+                    <td>93%</td>
+                    <td>7%</td>
+                    <td>0%</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Finding information was easy for almost everyone. Ordering was clearly the hardest task: 29% found it
+            hard or could not do it.
+        </p>
+
+        <h3>Design (appearance 3.1, readability 4.1)</h3>
+        <p>
+            Design got the lowest score. Several testers thought the design was plain or "old school", and some
+            wanted more pictures, especially on the front page. One tester did not like the colors and fonts, and
+            thought the orange color on the Order link was too strong:
+        </p>
+        <blockquote>"Looks basic, I wish there were more pictures. One on the front page would have been nice."</blockquote>
+        <blockquote>"I would change the front page by adding a big, atmospheric picture of pastries right below the navigation menu."</blockquote>
+        <p>
+            Most testers found the text easy to read, but one tester (65 or older, using an iPhone) gave readability
+            the score 1 and wrote that he liked the design but could not read it. One tester pointed out that the
+            margin around the page looks strange, and another noticed beige lines on each side of the navigation
+            menu on his phone.
+        </p>
+
+        <h3>Navigation (4.5)</h3>
+        <p>
+            Navigation got the highest score, and it was the thing testers liked most:
+        </p>
+        <blockquote>"Easy to navigate and well organized."</blockquote>
+        <blockquote>"The navigation menu was tidy, simple and easy to understand."</blockquote>
+        <p>
+            The criticism was about having Menu and Order on two different pages, which means many clicks for
+            a small website. One tester also noticed that the "Order" link always looks highlighted, so the
+            menu does not show which page you are on.
+        </p>
+
+        <h3>Content (4.3)</h3>
+        <p>
+            Testers found the information useful and understandable. A few wanted more detailed product
+            descriptions. One tester thought the products were too expensive.
+        </p>
+
+        <h3>Usability (works on my device 4.6, overall satisfaction 3.7)</h3>
+        <p>
+            79% said everything worked on their device. The website worked well on all the devices we tested.
+            The biggest usability problem was ordering. This was the most common comment in the whole questionnaire:
+        </p>
+        <blockquote>"It is cumbersome to jump between Menu and Order to place an order."</blockquote>
+        <p>
+            Overall satisfaction was between 3 and 5 (average 3.7). The website works, but it is not
+            exciting yet.
+        </p>
+
+        <h3>Client testimonial</h3>
+        <p>The client gave the website 4 out of 5 in overall satisfaction and wrote:</p>
+        <blockquote>
+            "I really like that it is possible to order online and that you can choose between paying online or
+            in the store. I like the menu, it is easy to navigate with nice pictures of my pastries. It is also
+            great that it is easy to find out where my bakery is, with both a map and an address, and the opening
+            hours are visible and easy to find. I also like that it is clear that I take larger orders, with
+            contact information and the times I can be reached by phone. I also liked that you added an About
+            page with information about me, why I started and my passion for baking. As for changes, I wish it was
+            possible to order the pastries through the Menu page, and that the website had more pictures and a
+            better balance between text and empty space."
+        </blockquote>
+        <p>
+            When asked what he would change, he answered that he wanted a clearer visual connection between the
+            content and the design, for example a picture on the front page that catches the eye.
+        </p>
+    </section>
+
+    <!-- 7. Your Response -->
+    <section>
+        <h2>Our Response</h2>
+        <p>
+            We have not changed the website after the testing. Below is what we would do to address the feedback
+            once the course is over, ordered from most to least important.
+        </p>
+
+        <h3>1. Order directly from the Menu page</h3>
+        <p>
+            All three live testers, several questionnaire testers and the client asked for this. We would add an
+            "Add to order" button under each product on the Menu page, and keep the Order page as a cart where
+            customers fill in their information. The cart is already saved in localStorage, so the Menu page and
+            the Order page could use the same cart. This also fits what we wrote in P1, that ordering should be
+            connected to the menu because customers look at the menu before they order.
+        </p>
+
+        <h3>2. Make ordering easier</h3>
+        <p>
+            We would accept phone numbers written with "+47" and spaces, since this is a normal way to write a
+            Norwegian phone number. Tester 2 did not understand that he had to click "Add to Order", so we would
+            make that button more visible, or add the product automatically when it is chosen. We would also show
+            all error messages next to the field they belong to, at the same time, instead of one by one.
+        </p>
+        <p>
+            When we went through the Order page again after the testing, we also found two problems ourselves.
+            The customer can only choose a pickup time, not a day, so it is possible to choose 10:00 on a Sunday
+            even though the bakery opens at 11:00. We would let the customer choose the day first, and then only
+            show the times when the bakery is open that day. Also, if the same product is added twice, for example
+            Chocolate Cake, it shows up as two lines in the cart. We would instead increase the quantity on the
+            line that is already there.
+        </p>
+
+        <h3>3. A more attractive design</h3>
+        <p>
+            Both testers and the client asked for more pictures, and a large picture on the front page was
+            suggested more than once. We would add a picture of the bakery or its pastries on the front page,
+            give the pages more space between text and sections, and look at the colors and fonts again so the
+            design feels warmer and more modern.
+        </p>
+
+        <h3>4. Smaller fixes</h3>
+        <ul>
+            <li>Show which page the user is on in the navigation menu, and give the Order link a style that does not look like "the current page".</li>
+            <li>Remove the padding around the page on small screens so the navigation menu goes all the way to the edges.</li>
+            <li>Set the font size in the form fields to 16px so the iPhone does not zoom in.</li>
+            <li>Make the images smaller (compress them and lower the resolution), and add width and height to the img elements so the content does not jump while loading.</li>
+            <li>Add a meta description to all pages, and a favicon to remove the error in the console.</li>
+        </ul>
+
+        <h3>5. Older users and readability</h3>
+        <p>
+            The only tester over 65 could not read the text well and could not place the order. One tester is not
+            enough to draw a conclusion, but Simon's customers are likely to include many older people. We would
+            make the text a bit larger and test the website again with more older users before making more changes.
+        </p>
+
+        <h3>What is difficult or impossible to do</h3>
+        <ul>
+            <li>
+                <strong>Real online payment and orders:</strong> the website has no server, so orders are not sent
+                anywhere, and payment does not happen. This needs a back-end and a payment provider, which is outside
+                what we have learned in this course.
+            </li>
+            <li>
+                <strong>Simon updating the menu himself:</strong> in P1 we wrote that Simon should be able to change
+                the menu, because the products change from week to week. Today the products are written directly in
+                the HTML and in the JavaScript. Without a simple admin page or a content management system, Simon
+                cannot do this himself. A first step would be to keep all products in one list in JavaScript and
+                build both the Menu and the Order page from that list.
+            </li>
+        </ul>
+    </section>
+
+    <!-- 8. Self-reflection -->
+    <section>
+        <h2>Self-reflection</h2>
+        <p>
+            The most important lesson from this project is how differently we and the users see the website. When
+            we tested it ourselves on four devices, we found almost no problems, because we are familiar with the website. 
+            The first time we watched someone else use it, they went to the wrong page to order and
+            missed a button we thought was obvious. We learned that you cannot test your own website properly
+            alone, and that watching one real user teaches you more than many answers in a questionnaire.
+        </p>
+        
+        <p>
+            We also learned that who you test with matters. Most of our testers were students like us, and they
+            solved the tasks easily. Our client is a 60-year-old man who struggles with technology, and the one
+            older tester we had struggled the most. We should have put more effort into reaching older testers who are not as familiar with technology, 
+            since they are likely to be a large part of Simon's customer base.
+        </p>
+    </section>
+
+        <footer>
+        <p>
+            <a href="https://validator.w3.org/nu/?doc=https://evenavk.github.io/Documents/P3_testing_16.html">Validate HTML</a>
+            |
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://evenavk.github.io/Documents/style.css">Validate CSS</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
